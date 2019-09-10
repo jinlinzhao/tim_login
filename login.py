@@ -21,7 +21,7 @@ class QQ_login(object):
     def __init__(self, username=None, password=None):
         # 运行tim
         # os.system('"C:\qq\Bin\QQScLauncher.exe"')
-        self.conn = redis.StrictRedis.from_url('redis://192.168.17.109/15')
+        self.conn = redis.StrictRedis.from_url('redis://127.0.0.1/15')
         self.lock_user = 'tencent_selenium_accounts_lock_2'
         os.system('"C:\qq\Bin\QQScLauncher.exe"')
         time.sleep(5)
